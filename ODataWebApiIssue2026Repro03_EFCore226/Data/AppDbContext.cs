@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using ODataWebApiIssue2026Repro03_EFCore220.Models;
+using ODataWebApiIssue2026Repro03_EFCore226.Models;
 
-namespace ODataWebApiIssue2026Repro03_EFCore220.DataSources
+namespace ODataWebApiIssue2026Repro03_EFCore226.DataSources
 {
     public class AppDbContext : DbContext
     {
@@ -22,7 +22,6 @@ namespace ODataWebApiIssue2026Repro03_EFCore220.DataSources
             {
                 optionsBuilder
                     .UseLoggerFactory(_loggerFactory)
-                    .EnableSensitiveDataLogging()
                     .UseSqlServer(@"Data Source = (LocalDb)\MSSQLLocalDB; Integrated Security = True; Persist Security Info = True; Database = Repro03EmpDb");
             }
         }

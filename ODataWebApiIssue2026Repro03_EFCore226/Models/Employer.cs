@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace ODataWebApiIssue2026Repro03_EFCore220.Models
+namespace ODataWebApiIssue2026Repro03_EFCore226.Models
 {
     public class Employer
     {

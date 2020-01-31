@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ODataWebApiIssue2026Repro03_EFCore220.Migrations
+namespace ODataWebApiIssue2026Repro03_EFCore226.Migrations
 {
     public partial class InitialMigration : Migration
     {

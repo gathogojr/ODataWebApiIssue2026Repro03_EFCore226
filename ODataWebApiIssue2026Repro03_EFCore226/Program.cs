@@ -1,9 +1,9 @@
-﻿using ODataWebApiIssue2026Repro03_EFCore220.DataSources;
-using ODataWebApiIssue2026Repro03_EFCore220.Models;
+﻿using ODataWebApiIssue2026Repro03_EFCore226.DataSources;
+using ODataWebApiIssue2026Repro03_EFCore226.Models;
 using System;
 using System.Linq;
 
-namespace ODataWebApiIssue2026Repro03_EFCore220
+namespace ODataWebApiIssue2026Repro03_EFCore226
 {
     class Program
     {

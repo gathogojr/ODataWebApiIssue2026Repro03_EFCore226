@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ODataWebApiIssue2026Repro03_EFCore220.DataSources;
+using ODataWebApiIssue2026Repro03_EFCore226.DataSources;
 
-namespace ODataWebApiIssue2026Repro03_EFCore220.Migrations
+namespace ODataWebApiIssue2026Repro03_EFCore226.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20200131062958_InitialMigration")]
@@ -20,7 +20,7 @@ namespace ODataWebApiIssue2026Repro03_EFCore220.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ODataWebApiIssue2026Repro03_EFCore220.Models.Department", b =>
+            modelBuilder.Entity("ODataWebApiIssue2026Repro03_EFCore226.Models.Department", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -45,7 +45,7 @@ namespace ODataWebApiIssue2026Repro03_EFCore220.Migrations
                         });
                 });
 
-            modelBuilder.Entity("ODataWebApiIssue2026Repro03_EFCore220.Models.Employee", b =>
+            modelBuilder.Entity("ODataWebApiIssue2026Repro03_EFCore226.Models.Employee", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -131,7 +131,7 @@ namespace ODataWebApiIssue2026Repro03_EFCore220.Migrations
                         });
                 });
 
-            modelBuilder.Entity("ODataWebApiIssue2026Repro03_EFCore220.Models.Employer", b =>
+            modelBuilder.Entity("ODataWebApiIssue2026Repro03_EFCore226.Models.Employer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -156,14 +156,14 @@ namespace ODataWebApiIssue2026Repro03_EFCore220.Migrations
                         });
                 });
 
-            modelBuilder.Entity("ODataWebApiIssue2026Repro03_EFCore220.Models.Employee", b =>
+            modelBuilder.Entity("ODataWebApiIssue2026Repro03_EFCore226.Models.Employee", b =>
                 {
-                    b.HasOne("ODataWebApiIssue2026Repro03_EFCore220.Models.Department", "Department")
+                    b.HasOne("ODataWebApiIssue2026Repro03_EFCore226.Models.Department", "Department")
                         .WithMany()
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("ODataWebApiIssue2026Repro03_EFCore220.Models.Employer", "Employer")
+                    b.HasOne("ODataWebApiIssue2026Repro03_EFCore226.Models.Employer", "Employer")
                         .WithMany("Employees")
                         .HasForeignKey("EmployerId")
                         .OnDelete(DeleteBehavior.Cascade);
